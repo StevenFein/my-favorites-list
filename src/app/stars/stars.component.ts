@@ -8,6 +8,7 @@ import { STARS } from '../mock-stars';
   styleUrls: ['./stars.component.css']
 })
 export class StarsComponent {
+  imageSource?: string;
   stars = STARS;
   selectedStar?: Star;
   onSelect(star: Star): void {
