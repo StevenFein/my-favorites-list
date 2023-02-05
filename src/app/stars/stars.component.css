@@ -19,7 +19,6 @@
     margin: .5em;
     padding: 0;
     border-radius: 4px;
-    display: flex;
     align-items: stretch;
     height: 1.8em;
   }
@@ -63,4 +62,7 @@
   
   .stars .name {
     align-self: center;
+  }
+  h2{
+    margin-left: 90px;
   }

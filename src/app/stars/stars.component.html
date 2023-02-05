@@ -1,13 +1,13 @@
-<h2>My Stars</h2>
+<h2>Stars</h2>
 <ul class="stars">
     <li *ngFor="let star of stars">
-    <button type="button" (click)="onSelect(star)">
+    <button type="button" [class.selected]="star === selectedStar" (click)="onSelect(star)">
       <!--<span class="badge">{{star.id}}</span>-->
       <span class="name">{{star.name}}</span>
     </button>
   </li>
 </ul>
 <div *ngIf="selectedStar">
-    <h2>Details</h2>
-    <div>Description: {{selectedStar.description}}</div>
+    <h2>Description: </h2>
+    <div>{{selectedStar.description}}</div>
 </div>
