@@ -9,4 +9,8 @@ import { STARS } from '../mock-stars';
 })
 export class StarsComponent {
   stars = STARS;
+  selectedStar?: Star;
+  onSelect(star: Star): void {
+  this.selectedStar = star;
+}
 }
