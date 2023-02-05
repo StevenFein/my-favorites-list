@@ -1,4 +1,4 @@
-<h2>Stars</h2>
+<h2 class="title">Stars</h2>
 <ul class="stars">
     <li *ngFor="let star of stars">
     <button type="button" [class.selected]="star === selectedStar" (click)="onSelect(star)">
