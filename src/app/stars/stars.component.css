@@ -21,6 +21,10 @@
     border-radius: 4px;
     align-items: stretch;
     height: 1.8em;
+    font-family: 'Itim', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-size: medium;
+    font-weight: bold;
   }
   
   .stars button:hover {
@@ -65,4 +69,10 @@
   }
   .title{
     margin-left: 90px;
+  }
+  .description{
+    font-family: 'Itim', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-size: medium;
+    font-weight: 600;
   }
