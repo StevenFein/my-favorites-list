@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Star } from '../star';
+import { STARS } from '../mock-stars';
 
 @Component({
   selector: 'app-stars',
@@ -7,8 +8,5 @@ import { Star } from '../star';
   styleUrls: ['./stars.component.css']
 })
 export class StarsComponent {
-  star: Star = {
-    id: 1,
-    name: 'The Sun'
-  };
+  stars = STARS;
 }
