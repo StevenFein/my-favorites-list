@@ -1,0 +1,10 @@
+hr{
+    height: 2px;
+    background-color: blueviolet;
+    border-color: black;
+}
+h1{
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
