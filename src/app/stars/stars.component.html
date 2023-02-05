@@ -1,14 +1,17 @@
 <h2 class="title">Stars</h2>
+<div class="child">
 <ul class="stars">
-    <li *ngFor="let star of stars">
+  <li *ngFor="let star of stars">
     <button type="button" [class.selected]="star === selectedStar" (click)="onSelect(star)">
       <!--<span class="badge">{{star.id}}</span>-->
       <span class="name">{{star.name}}</span>
     </button>
   </li>
 </ul>
+</div>
+<div class="child"><img *ngIf="selectedStar" src={{selectedStar.source}}></div>
+
 <div *ngIf="selectedStar">
     <h2>Description: </h2>
-    <div>{{selectedStar.description}}</div>
+    <div class ="description">{{selectedStar.description}}</div>
 </div>
-<img *ngIf="selectedStar" src={{selectedStar.source}}>
